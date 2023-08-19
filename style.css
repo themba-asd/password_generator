@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: conic-gradient(rgba(47, 79, 79, 0.956), 
+                            darkslategrey,
+                            rgba(47, 79, 79, 0.961),
+                            darkslategrey,
+                            rgba(47, 79, 79, 0.959));
+}
+.container{
+    display: grid;
+    gap: 2rem;
+    padding: 1em 2em;
+    border: solid 1px none;
+    border-radius: 1em;
+    box-shadow: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.383);
+}
+#title-text{
+    font-size: 1.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-block: 1rem;
+    padding: 0 0 0 0.4em;
+    border-left: solid 1px;
+}
+#password,
+#copy-pw-btn,
+#create-pw-btn{
+    font-size: small;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 0rem 0rem 0.3rem rgba(0, 0, 0, 0.383);
+    background-color: transparent;
+}
+#password{
+    width: 15em;
+    height: 2.5rem;
+    margin-right: 0.5em;
+    padding-left: 1em;
+}
+#copy-pw-btn{
+    width: 6em;
+    height: 2.5rem;
+}
+#create-pw-btn{
+    width: 9em;
+    height: 3em;
+    margin-bottom: 1.5em;
+}
+#password::placeholder{
+    padding-left: 1em;
+    color: #000;
+    font-size: small;
+}
+#create-pw-btn:hover,
+#copy-pw-btn:hover{
+    cursor: pointer;
+    border: solid 1px slategray;
+}
+#copy-pw-btn:focus{
+    border-color: green;
+}
